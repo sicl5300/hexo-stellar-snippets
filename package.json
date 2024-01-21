@@ -1,8 +1,9 @@
 {
   "name": "hexo-stellar-snippets",
-  "displayName": "hexo-stellar-snippets",
+  "displayName": "Hexo Stellar Snippets",
   "description": "Snippets for hexo-theme-stellar's custom tag plugins.",
   "version": "1.0.0",
+  "publisher": "sicl5300",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -44,6 +45,8 @@
 		"type": "git",
 		"url": "https://github.com/sicl5300/hexo-stellar-snippets"
 	},
+  "homepage": "https://github.com/sicl5300/hexo-stellar-snippets",
+  "icon": "lib/images/hexo.png",
   "devDependencies": {
     "@types/vscode": "^1.85.0",
     "@types/mocha": "^10.0.6",
