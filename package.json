@@ -2,7 +2,7 @@
   "name": "hexo-stellar-snippets",
   "displayName": "Hexo Stellar Snippets",
   "description": "Snippets for hexo-theme-stellar's custom tag plugins.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "sicl5300",
   "engines": {
     "vscode": "^1.85.0"
