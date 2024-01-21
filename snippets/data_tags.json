@@ -12,19 +12,6 @@
         ],
         "description": "静态时间线，顺序从上到下。时间线还可以动态加载，详见文档。"
     },
-    "Folders 手风琴/多折叠容器聚合": {
-        "prefix": [
-            ">folders"
-        ],
-        "body": [
-            "{% folders %}",
-            "<!-- folder \"${1:title}\" -->",
-            "$2",
-            "{% endfolders %}",
-            ""
-        ],
-        "description": ""
-    },
     "Friends 友链": {
         "prefix": [
             "=friends"

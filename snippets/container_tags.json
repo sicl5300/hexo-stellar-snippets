@@ -1,3 +1,125 @@
 {
-    
+    "Box 盒子容器(ablock)": {
+        "prefix": [
+            ">box"
+        ],
+        "body": [
+            "{% box \"${1:title}\" color:${2|red,orange,yellow,green,cyan,blue,purple,warning,error|} %}",
+            "",
+            "{% endbox %}",
+            ""
+        ],
+        "description": ""
+    },
+    "Codeblock Box代码块": {
+        "prefix": [
+            ">codeblock"
+        ],
+        "body": [
+            "{% box child:codeblock color:${2|red,orange,yellow,green,cyan,blue,purple,warning,error|} %}",
+            "",
+            "{% endbox %}",
+            ""
+        ]
+    },
+    "Code Comparison": {
+        "prefix": [
+            "=codecmp",
+            "=comparison"
+        ],
+        "body": [
+            "{% grid %}",
+            "<!-- cell -->",
+            "**推荐的写法**",
+            "{% box child:codeblock color:green %}",
+            "",
+            "{% endbox %}",
+            "",
+            "<!-- cell -->",
+            "**不推荐的写法**",
+            "{% box child:codeblock color:red %}",
+            "",
+            "{% endbox %}",
+            "{% endgrid %}",
+            ""
+        ],
+        "description": ""
+    },
+    "Folding 折叠容器": {
+        "prefix": [
+            ">coll"
+        ],
+        "body": [
+            "{% folding \"${1:title}\" open:${2|false,true|} color:${3|red,orange,yellow,green,cyan,blue,purple|} %}",
+            "",
+            "{% endfolding  %}",
+            ""
+        ],
+        "description": ""
+    },
+    "Folding Code 折叠代码": {
+        "prefix": [
+            ">codellapse"
+        ],
+        "body": [
+            "{% folding \"${1:title}\" open:${2|false,true|} color:${3|red,orange,yellow,green,cyan,blue,purple|} codeblock:${4|false,true|} %}",
+            "",
+            "{% endfolding  %}",
+            ""
+        ],
+        "description": ""
+    },
+    "Folders 手风琴/多折叠容器聚合": {
+        "prefix": [
+            ">folders"
+        ],
+        "body": [
+            "{% folders %}",
+            "<!-- folder \"${1:title}\" -->",
+            "",
+            "{% endfolders %}",
+            ""
+        ],
+        "description": ""
+    },
+    "Tabs 标签栏": {
+        "prefix": [
+            ">tabs"
+        ],
+        "body": [
+            "{% tabs active:${1:第几个} align:center %}",
+            "<!-- tab \"${2:title}\" -->",
+            "",
+            "{% endtabs %}",
+            ""
+        ],
+        "description": ""
+    },
+    "Grid 2lines 左右分栏": {
+        "prefix": [
+            ">2lines"
+        ],
+        "body": [
+            "{% grid bg:${1|block,card|} %}",
+            "<!-- cell left -->",
+            "",
+            "<!-- cell right -->",
+            "",
+            "{% endgrid %}",
+            ""
+        ],
+        "description": ""
+    },
+    "Gallery 画廊": {
+        "prefix": [
+            ">gallery"
+        ],
+        "body": [
+            "{% gallery layout:${1|grid,flow} size:${2|mix,s,m,l,xl} ratio:${3|origin,square} %}",
+            "",
+            "{% endgallery %}",
+            ""
+        ],
+        "description": "Grid网格 Flow瀑布流 Mix混合大小"
+    }
 }
