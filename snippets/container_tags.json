@@ -115,7 +115,7 @@
             ">gallery"
         ],
         "body": [
-            "{% gallery layout:${1|grid,flow} size:${2|mix,s,m,l,xl} ratio:${3|origin,square} %}",
+            "{% gallery layout:${1|grid,flow|} size:${2|mix,s,m,l,xl|} ratio:${3|origin,square|} %}",
             "",
             "{% endgallery %}",
             ""
