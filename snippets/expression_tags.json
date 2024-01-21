@@ -1,3 +1,167 @@
 {
-    
+    "Emoji 表情": {
+        "prefix": [
+            "=emoji"
+        ],
+        "body": [
+            "{% ${1|default,twemoji,qq,aru,tieba|} ${2:name} %}"
+        ],
+        "description": "行内Emoji表情，依照主题配置中引入的表情文件选择来源。表情列表请查找 https://gcore.jsdelivr.net/gh/cdn-x/emoji/ 。可以设置高度 height:1.75em"
+    },
+    "Mark 荧光笔标记":{
+        "prefix":[
+            ">mark"
+        ],
+        "body":[
+            "{% mark \"${1:content}\" color:${2|default,red,orange,yellow,green,cyan,blue,purple,light,dark,warning,error|} %}"
+        ],
+        "description": "荧光笔标记，支持多种底色"
+    },
+    "Hashtag 可互动荧光笔标签":{
+        "prefix":[
+            ">hashtag"
+        ],
+        "body":[
+            "{% hashtag \"${1:content}\" \"${2:link}\" %}"
+        ],
+        "description": "显示为#Content，Hover时像按钮一样改变，可以指定点击链接"
+    },
+    "Image 图像(Simple)": {
+        "prefix": [
+            ">img"
+        ],
+        "body": [
+            "{% image ${1:src} \"${2:desc}\" %}"
+        ],
+        "description": "图片标签精简版"
+    },
+    "Image 图像(Full)": {
+        "prefix": [
+            "=image"
+        ],
+        "body": [
+            "{% image ${1:src} ${2:desc} download:${3|true,false,https://|} width:${4:200}px padding:${5:20}px bg:${6|var(--card),#|} fancybox:${7|true,false|} %}"
+        ],
+        "description": "图片标签完整版"
+    },
+    "Poetry 诗歌": {
+        "prefix": [
+            "=poetry"
+        ],
+        "body": [
+            "{% poetry \"${1:title}\" author:$2 footer:${3:诗词节选} %}",
+            "",
+            "{% endpoetry %}",
+            ""
+        ],
+        "description": "诗词，支持题目-作者-选自"
+    },
+    "Note 备注块": {
+        "prefix": [
+            ">note"
+        ],
+        "body": [
+            "{% note \"${1:title}\" \"${2:content}\" color:${3|default,light,dark,red,orange,yellow,green,cyan,blue,purple,warning,error|} %}"
+        ],
+        "description": "备注块，可以考虑使用box替代"
+    },
+    "Link 链接卡片": {
+        "prefix": [
+            ">link"
+        ],
+        "body": [
+            "{% link ${1:href} \"${2:title}\" desc:${3|true,false|} %}"
+        ],
+        "description": "链接卡片，可以手动设置标题和图标(icon:src)，选择显示摘要"
+    },
+    "Copy 复制行": {
+        "prefix": [
+            ">copy"
+        ],
+        "body": [
+            "{% copy \"${1:content}\" %}"
+        ],
+        "description": "复制行，可以设置 git:https/gh/ssh，后面跟 user/repo"
+    },
+    "Radio 单选": {
+        "prefix": [
+            "=radio"
+        ],
+        "body": [
+            "{% radio \"${1:content}\" checked:${2|false,true|} %}"
+        ],
+        "description": ""
+    },
+    "Checkbox 多选": {
+        "prefix": [
+            "=checkbox"
+        ],
+        "body": [
+            "{% checkbox \"${1:content}\" checked:${2|false,true|} color:${3|red,orange,yellow,green,cyan,blue,purple|} symbol:${4|default,times,plus,minus|} %}"
+        ],
+        "description": "可选颜色和打勾样式"
+    },
+    "Audio 音频": {
+        "prefix": [
+            ">audio"
+        ],
+        "body": [
+            "{% audio netease: %}"
+        ],
+        "description": "可以普通使用，也可以播放网易 netease:ID(不是网址)，autoplay:1/0，type:2/0（歌曲/歌单）"
+    },
+    "Video 视频": {
+        "prefix": [
+            ">video"
+        ],
+        "body": [
+            "{% audio bilibili: %}"
+        ],
+        "description": "可以普通使用，也可以播放B站 bilibili:BV(不是网址)，width: 90%/500px，autoplay:1/0"
+    },
+    "Psw 黑幕": {
+        "prefix": [
+            ">psw"
+        ],
+        "body": [
+            "{% psw \"${1:content}\" %}"
+        ],
+        "description": ""
+    },
+    "U 下划线": {
+        "prefix": [
+            ">u"
+        ],
+        "body": [
+            "{% u \"${1:content}\" %}"
+        ],
+        "description": ""
+    },
+    "Del 删除线": {
+        "prefix": [
+            ">del"
+        ],
+        "body": [
+            "{% del \"${1:content}\" %}"
+        ],
+        "description": "删除线"
+    },
+    "Kbd 键盘提示": {
+        "prefix": [
+            "=kbd"
+        ],
+        "body": [
+            "{% kbd ${1:key} %}"
+        ],
+        "description": ""
+    },
+    "KdbE 键盘提示（特殊按键）": {
+        "prefix": [
+            "=kbde"
+        ],
+        "body": [
+            "{% kbd ${1|⌘ Command,⭾ Tab,⌫ BackSpace,⌤ Enter,↵ Enter,⊞ Windows,⇧ Shift,🄰 CAPSLOCK,⇦ Left,⇨ Right,⇧ Up,⇩ Down|} %}"
+        ],
+        "description": ""
+    }
 }
