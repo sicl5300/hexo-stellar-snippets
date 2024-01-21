@@ -40,6 +40,10 @@
     "lint": "eslint src --ext ts",
     "test": "vscode-test"
   },
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/sicl5300/hexo-stellar-snippets"
+	},
   "devDependencies": {
     "@types/vscode": "^1.85.0",
     "@types/mocha": "^10.0.6",
