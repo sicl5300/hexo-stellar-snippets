@@ -1,3 +1,46 @@
 {
-    
+    "Timeline 时间线": {
+        "prefix": [
+            ">timeline"
+        ],
+        "body": [
+            "{% timeline %}",
+            "<!-- node \"${1:title}\" -->",
+            "$2",
+            "{% endtimeline %}",
+            ""
+        ],
+        "description": "静态时间线，顺序从上到下。时间线还可以动态加载，详见文档。"
+    },
+    "Folders 手风琴/多折叠容器聚合": {
+        "prefix": [
+            ">folders"
+        ],
+        "body": [
+            "{% folders %}",
+            "<!-- folder \"${1:title}\" -->",
+            "$2",
+            "{% endfolders %}",
+            ""
+        ],
+        "description": ""
+    },
+    "Friends 友链": {
+        "prefix": [
+            "=friends"
+        ],
+        "body": [
+            "{% friends ${1:分组名} %}"
+        ],
+        "description": ""
+    },
+    "Github 卡片": {
+        "prefix": [
+            "=ghcard"
+        ],
+        "body": [
+            "{% ghcard ${1:username} ${2| ,theme:dark|} %}"
+        ],
+        "description": ""
+    }
 }
