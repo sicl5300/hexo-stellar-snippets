@@ -101,9 +101,9 @@
         ],
         "body": [
             "{% grid bg:${1|block,card|} %}",
-            "<!-- cell left -->",
+            "<!-- cell -->",
             "",
-            "<!-- cell right -->",
+            "<!-- cell -->",
             "",
             "{% endgrid %}",
             ""
