@@ -28,9 +28,13 @@
 
 ## 更新日志
 
-### 1.0.0
+### 1.0.1
 
 Initial release.
+
+### 1.0.2
+
+Fix `>2lines` with legacy cell syntax.
 
 ## 许可协议
 
