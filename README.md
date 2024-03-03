@@ -36,6 +36,10 @@ Initial release.
 
 Fix `>2lines` with legacy cell syntax.
 
+### 1.0.3
+
+Fix `>codellapse`.
+
 ## 许可协议
 
 MIT

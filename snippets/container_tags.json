@@ -52,7 +52,7 @@
         "body": [
             "{% folding \"${1:title}\" open:${2|false,true|} color:${3|red,orange,yellow,green,cyan,blue,purple|} %}",
             "",
-            "{% endfolding  %}",
+            "{% endfolding %}",
             ""
         ],
         "description": ""
@@ -62,9 +62,9 @@
             ">codellapse"
         ],
         "body": [
-            "{% folding \"${1:title}\" open:${2|false,true|} color:${3|red,orange,yellow,green,cyan,blue,purple|} codeblock:${4|false,true|} %}",
+            "{% folding \"${1:title}\" open:${2|false,true|} color:${3|red,orange,yellow,green,cyan,blue,purple|} child:codeblock %}",
             "",
-            "{% endfolding  %}",
+            "{% endfolding %}",
             ""
         ],
         "description": ""
